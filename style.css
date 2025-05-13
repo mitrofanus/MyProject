@@ -1,4 +1,3 @@
-/* Базовые стили */
 :root {
     --main-color: #3498db;
     --secondary-color: #2c3e50;
@@ -35,7 +34,6 @@ a:hover {
     padding: 0 20px;
 }
 
-/* Шапка сайта */
 header {
     background-color: var(--secondary-color);
     color: white;
@@ -79,7 +77,6 @@ nav ul li a:hover {
     color: white;
 }
 
-/* Главная секция */
 .hero {
     padding: 100px 0;
     background-color: var(--main-color);
@@ -119,12 +116,15 @@ nav ul li a:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* О себе */
 .about {
-    padding: 80px 0;
-    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px; /* Ограничиваем ширину, чтобы не растягивалось слишком */
+    margin: 0 auto; /* Центруем по горизонтали */
+    padding: 50px 20px; /* Внутренние отступы сверху/снизу и по бокам */
+    gap: 40px; /* Отступ между картинкой и текстом */
 }
-
 .section-title {
     text-align: center;
     margin-bottom: 60px;
@@ -149,23 +149,24 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 70px;
 }
-
 .about-img {
-    flex: 0 0 40%;
+    flex: 0 0 45%;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-
 .about-img img {
     width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
+    
 }
 
 .about-text {
-    flex: 0 0 55%;
+    flex: 0 0 45%;
 }
 
 .about-text h3 {
@@ -179,7 +180,6 @@ nav ul li a:hover {
     line-height: 1.8;
 }
 
-/* Навыки */
 .skills {
     padding: 80px 0;
     background-color: #f9f9f9;
