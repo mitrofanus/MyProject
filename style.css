@@ -254,3 +254,59 @@ nav ul li a:hover {
         display: none;
     }
 }
+
+
+.projects-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f8f9fb;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 40px;
+  }
+  
+  .projects-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .project-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-description {
+    font-size: 16px;
+    color: #4a5568;
+    margin-bottom: 20px;
+  }
+  
+  .project-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-button:hover {
+    background-color: #1d4ed8;
+    color: white;
+  }
